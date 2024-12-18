@@ -1,0 +1,714 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F99D1B52D12B3020052B024 /* TakeHomeTestNagarajuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F99D1B42D12B3020052B024 /* TakeHomeTestNagarajuApp.swift */; };
+		3F99D1B72D12B3020052B024 /* CurrentLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F99D1B62D12B3020052B024 /* CurrentLocationView.swift */; };
+		3F99D1B92D12B3040052B024 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F99D1B82D12B3040052B024 /* Assets.xcassets */; };
+		3F99D1BC2D12B3040052B024 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F99D1BB2D12B3040052B024 /* Preview Assets.xcassets */; };
+		3F99D1C62D12B3050052B024 /* TakeHomeTestNagarajuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F99D1C52D12B3050052B024 /* TakeHomeTestNagarajuTests.swift */; };
+		3F99D1D02D12B3050052B024 /* TakeHomeTestNagarajuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F99D1CF2D12B3050052B024 /* TakeHomeTestNagarajuUITests.swift */; };
+		3F99D1D22D12B3050052B024 /* TakeHomeTestNagarajuUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F99D1D12D12B3050052B024 /* TakeHomeTestNagarajuUITestsLaunchTests.swift */; };
+		3F99D1E52D12B3590052B024 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F99D1DF2D12B3590052B024 /* LocationManager.swift */; };
+		3F99D1E62D12B3590052B024 /* LocalPersistentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F99D1E02D12B3590052B024 /* LocalPersistentManager.swift */; };
+		3F99D1E72D12B3590052B024 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F99D1E12D12B3590052B024 /* NetworkManager.swift */; };
+		3F99D1E82D12B3590052B024 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F99D1E22D12B3590052B024 /* NetworkMonitor.swift */; };
+		3F99D1E92D12B3590052B024 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F99D1E32D12B3590052B024 /* WeatherModel.swift */; };
+		3F99D1EA2D12B3590052B024 /* APIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F99D1E42D12B3590052B024 /* APIs.swift */; };
+		3F99D1EF2D12B3750052B024 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F99D1EC2D12B3750052B024 /* Constants.swift */; };
+		3F99D1F02D12B3750052B024 /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F99D1ED2D12B3750052B024 /* DateUtils.swift */; };
+		3F99D1F12D12B3750052B024 /* CustomLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F99D1EE2D12B3750052B024 /* CustomLoadingView.swift */; };
+		3F99D1F52D12B3DD0052B024 /* CurrentLocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F99D1F32D12B3DD0052B024 /* CurrentLocationModel.swift */; };
+		3F99D1F62D12B3DD0052B024 /* CurrentLocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F99D1F42D12B3DD0052B024 /* CurrentLocationViewModel.swift */; };
+		3F99D1FB2D12B40C0052B024 /* SearchLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F99D1F82D12B40C0052B024 /* SearchLocationView.swift */; };
+		3F99D1FC2D12B40C0052B024 /* SearchLocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F99D1F92D12B40C0052B024 /* SearchLocationViewModel.swift */; };
+		3F99D1FD2D12B40C0052B024 /* SearchLocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F99D1FA2D12B40C0052B024 /* SearchLocationModel.swift */; };
+		3F99D2002D12B4AC0052B024 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 3F99D1FF2D12B4AC0052B024 /* Moya */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F99D1C22D12B3050052B024 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F99D1A92D12B3020052B024 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F99D1B02D12B3020052B024;
+			remoteInfo = TakeHomeTestNagaraju;
+		};
+		3F99D1CC2D12B3050052B024 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F99D1A92D12B3020052B024 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F99D1B02D12B3020052B024;
+			remoteInfo = TakeHomeTestNagaraju;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3F99D1B12D12B3020052B024 /* TakeHomeTestNagaraju.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakeHomeTestNagaraju.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F99D1B42D12B3020052B024 /* TakeHomeTestNagarajuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeHomeTestNagarajuApp.swift; sourceTree = "<group>"; };
+		3F99D1B62D12B3020052B024 /* CurrentLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocationView.swift; sourceTree = "<group>"; };
+		3F99D1B82D12B3040052B024 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F99D1BB2D12B3040052B024 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3F99D1C12D12B3050052B024 /* TakeHomeTestNagarajuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TakeHomeTestNagarajuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F99D1C52D12B3050052B024 /* TakeHomeTestNagarajuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeHomeTestNagarajuTests.swift; sourceTree = "<group>"; };
+		3F99D1CB2D12B3050052B024 /* TakeHomeTestNagarajuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TakeHomeTestNagarajuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F99D1CF2D12B3050052B024 /* TakeHomeTestNagarajuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeHomeTestNagarajuUITests.swift; sourceTree = "<group>"; };
+		3F99D1D12D12B3050052B024 /* TakeHomeTestNagarajuUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeHomeTestNagarajuUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3F99D1DF2D12B3590052B024 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		3F99D1E02D12B3590052B024 /* LocalPersistentManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalPersistentManager.swift; sourceTree = "<group>"; };
+		3F99D1E12D12B3590052B024 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		3F99D1E22D12B3590052B024 /* NetworkMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
+		3F99D1E32D12B3590052B024 /* WeatherModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		3F99D1E42D12B3590052B024 /* APIs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIs.swift; sourceTree = "<group>"; };
+		3F99D1EC2D12B3750052B024 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3F99D1ED2D12B3750052B024 /* DateUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
+		3F99D1EE2D12B3750052B024 /* CustomLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLoadingView.swift; sourceTree = "<group>"; };
+		3F99D1F32D12B3DD0052B024 /* CurrentLocationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentLocationModel.swift; sourceTree = "<group>"; };
+		3F99D1F42D12B3DD0052B024 /* CurrentLocationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentLocationViewModel.swift; sourceTree = "<group>"; };
+		3F99D1F82D12B40C0052B024 /* SearchLocationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchLocationView.swift; sourceTree = "<group>"; };
+		3F99D1F92D12B40C0052B024 /* SearchLocationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchLocationViewModel.swift; sourceTree = "<group>"; };
+		3F99D1FA2D12B40C0052B024 /* SearchLocationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchLocationModel.swift; sourceTree = "<group>"; };
+		3F99D2012D12B7C20052B024 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F99D1AE2D12B3020052B024 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F99D2002D12B4AC0052B024 /* Moya in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F99D1BE2D12B3050052B024 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F99D1C82D12B3050052B024 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F99D1A82D12B3020052B024 = {
+			isa = PBXGroup;
+			children = (
+				3F99D1B32D12B3020052B024 /* TakeHomeTestNagaraju */,
+				3F99D1C42D12B3050052B024 /* TakeHomeTestNagarajuTests */,
+				3F99D1CE2D12B3050052B024 /* TakeHomeTestNagarajuUITests */,
+				3F99D1B22D12B3020052B024 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3F99D1B22D12B3020052B024 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F99D1B12D12B3020052B024 /* TakeHomeTestNagaraju.app */,
+				3F99D1C12D12B3050052B024 /* TakeHomeTestNagarajuTests.xctest */,
+				3F99D1CB2D12B3050052B024 /* TakeHomeTestNagarajuUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F99D1B32D12B3020052B024 /* TakeHomeTestNagaraju */ = {
+			isa = PBXGroup;
+			children = (
+				3F99D2012D12B7C20052B024 /* Info.plist */,
+				3F99D1F22D12B3870052B024 /* CurrentLocationScreen */,
+				3F99D1F72D12B3F80052B024 /* SearchLocationScreen */,
+				3F99D1EB2D12B3640052B024 /* Resources */,
+				3F99D1DE2D12B3480052B024 /* Managers */,
+				3F99D1B42D12B3020052B024 /* TakeHomeTestNagarajuApp.swift */,
+				3F99D1B82D12B3040052B024 /* Assets.xcassets */,
+				3F99D1BA2D12B3040052B024 /* Preview Content */,
+			);
+			path = TakeHomeTestNagaraju;
+			sourceTree = "<group>";
+		};
+		3F99D1BA2D12B3040052B024 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3F99D1BB2D12B3040052B024 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3F99D1C42D12B3050052B024 /* TakeHomeTestNagarajuTests */ = {
+			isa = PBXGroup;
+			children = (
+				3F99D1C52D12B3050052B024 /* TakeHomeTestNagarajuTests.swift */,
+			);
+			path = TakeHomeTestNagarajuTests;
+			sourceTree = "<group>";
+		};
+		3F99D1CE2D12B3050052B024 /* TakeHomeTestNagarajuUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3F99D1CF2D12B3050052B024 /* TakeHomeTestNagarajuUITests.swift */,
+				3F99D1D12D12B3050052B024 /* TakeHomeTestNagarajuUITestsLaunchTests.swift */,
+			);
+			path = TakeHomeTestNagarajuUITests;
+			sourceTree = "<group>";
+		};
+		3F99D1DE2D12B3480052B024 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				3F99D1E42D12B3590052B024 /* APIs.swift */,
+				3F99D1E02D12B3590052B024 /* LocalPersistentManager.swift */,
+				3F99D1DF2D12B3590052B024 /* LocationManager.swift */,
+				3F99D1E12D12B3590052B024 /* NetworkManager.swift */,
+				3F99D1E22D12B3590052B024 /* NetworkMonitor.swift */,
+				3F99D1E32D12B3590052B024 /* WeatherModel.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		3F99D1EB2D12B3640052B024 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3F99D1EC2D12B3750052B024 /* Constants.swift */,
+				3F99D1EE2D12B3750052B024 /* CustomLoadingView.swift */,
+				3F99D1ED2D12B3750052B024 /* DateUtils.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3F99D1F22D12B3870052B024 /* CurrentLocationScreen */ = {
+			isa = PBXGroup;
+			children = (
+				3F99D1B62D12B3020052B024 /* CurrentLocationView.swift */,
+				3F99D1F32D12B3DD0052B024 /* CurrentLocationModel.swift */,
+				3F99D1F42D12B3DD0052B024 /* CurrentLocationViewModel.swift */,
+			);
+			path = CurrentLocationScreen;
+			sourceTree = "<group>";
+		};
+		3F99D1F72D12B3F80052B024 /* SearchLocationScreen */ = {
+			isa = PBXGroup;
+			children = (
+				3F99D1FA2D12B40C0052B024 /* SearchLocationModel.swift */,
+				3F99D1F82D12B40C0052B024 /* SearchLocationView.swift */,
+				3F99D1F92D12B40C0052B024 /* SearchLocationViewModel.swift */,
+			);
+			path = SearchLocationScreen;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F99D1B02D12B3020052B024 /* TakeHomeTestNagaraju */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F99D1D52D12B3050052B024 /* Build configuration list for PBXNativeTarget "TakeHomeTestNagaraju" */;
+			buildPhases = (
+				3F99D1AD2D12B3020052B024 /* Sources */,
+				3F99D1AE2D12B3020052B024 /* Frameworks */,
+				3F99D1AF2D12B3020052B024 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TakeHomeTestNagaraju;
+			packageProductDependencies = (
+				3F99D1FF2D12B4AC0052B024 /* Moya */,
+			);
+			productName = TakeHomeTestNagaraju;
+			productReference = 3F99D1B12D12B3020052B024 /* TakeHomeTestNagaraju.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3F99D1C02D12B3050052B024 /* TakeHomeTestNagarajuTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F99D1D82D12B3050052B024 /* Build configuration list for PBXNativeTarget "TakeHomeTestNagarajuTests" */;
+			buildPhases = (
+				3F99D1BD2D12B3050052B024 /* Sources */,
+				3F99D1BE2D12B3050052B024 /* Frameworks */,
+				3F99D1BF2D12B3050052B024 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F99D1C32D12B3050052B024 /* PBXTargetDependency */,
+			);
+			name = TakeHomeTestNagarajuTests;
+			productName = TakeHomeTestNagarajuTests;
+			productReference = 3F99D1C12D12B3050052B024 /* TakeHomeTestNagarajuTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3F99D1CA2D12B3050052B024 /* TakeHomeTestNagarajuUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F99D1DB2D12B3050052B024 /* Build configuration list for PBXNativeTarget "TakeHomeTestNagarajuUITests" */;
+			buildPhases = (
+				3F99D1C72D12B3050052B024 /* Sources */,
+				3F99D1C82D12B3050052B024 /* Frameworks */,
+				3F99D1C92D12B3050052B024 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F99D1CD2D12B3050052B024 /* PBXTargetDependency */,
+			);
+			name = TakeHomeTestNagarajuUITests;
+			productName = TakeHomeTestNagarajuUITests;
+			productReference = 3F99D1CB2D12B3050052B024 /* TakeHomeTestNagarajuUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F99D1A92D12B3020052B024 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					3F99D1B02D12B3020052B024 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					3F99D1C02D12B3050052B024 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 3F99D1B02D12B3020052B024;
+					};
+					3F99D1CA2D12B3050052B024 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 3F99D1B02D12B3020052B024;
+					};
+				};
+			};
+			buildConfigurationList = 3F99D1AC2D12B3020052B024 /* Build configuration list for PBXProject "TakeHomeTestNagaraju" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3F99D1A82D12B3020052B024;
+			packageReferences = (
+				3F99D1FE2D12B4AC0052B024 /* XCRemoteSwiftPackageReference "Moya" */,
+			);
+			productRefGroup = 3F99D1B22D12B3020052B024 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F99D1B02D12B3020052B024 /* TakeHomeTestNagaraju */,
+				3F99D1C02D12B3050052B024 /* TakeHomeTestNagarajuTests */,
+				3F99D1CA2D12B3050052B024 /* TakeHomeTestNagarajuUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F99D1AF2D12B3020052B024 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F99D1BC2D12B3040052B024 /* Preview Assets.xcassets in Resources */,
+				3F99D1B92D12B3040052B024 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F99D1BF2D12B3050052B024 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F99D1C92D12B3050052B024 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F99D1AD2D12B3020052B024 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F99D1B72D12B3020052B024 /* CurrentLocationView.swift in Sources */,
+				3F99D1E82D12B3590052B024 /* NetworkMonitor.swift in Sources */,
+				3F99D1EA2D12B3590052B024 /* APIs.swift in Sources */,
+				3F99D1FC2D12B40C0052B024 /* SearchLocationViewModel.swift in Sources */,
+				3F99D1FD2D12B40C0052B024 /* SearchLocationModel.swift in Sources */,
+				3F99D1FB2D12B40C0052B024 /* SearchLocationView.swift in Sources */,
+				3F99D1F12D12B3750052B024 /* CustomLoadingView.swift in Sources */,
+				3F99D1B52D12B3020052B024 /* TakeHomeTestNagarajuApp.swift in Sources */,
+				3F99D1E92D12B3590052B024 /* WeatherModel.swift in Sources */,
+				3F99D1F52D12B3DD0052B024 /* CurrentLocationModel.swift in Sources */,
+				3F99D1F62D12B3DD0052B024 /* CurrentLocationViewModel.swift in Sources */,
+				3F99D1E72D12B3590052B024 /* NetworkManager.swift in Sources */,
+				3F99D1E62D12B3590052B024 /* LocalPersistentManager.swift in Sources */,
+				3F99D1F02D12B3750052B024 /* DateUtils.swift in Sources */,
+				3F99D1E52D12B3590052B024 /* LocationManager.swift in Sources */,
+				3F99D1EF2D12B3750052B024 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F99D1BD2D12B3050052B024 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F99D1C62D12B3050052B024 /* TakeHomeTestNagarajuTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F99D1C72D12B3050052B024 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F99D1D02D12B3050052B024 /* TakeHomeTestNagarajuUITests.swift in Sources */,
+				3F99D1D22D12B3050052B024 /* TakeHomeTestNagarajuUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F99D1C32D12B3050052B024 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F99D1B02D12B3020052B024 /* TakeHomeTestNagaraju */;
+			targetProxy = 3F99D1C22D12B3050052B024 /* PBXContainerItemProxy */;
+		};
+		3F99D1CD2D12B3050052B024 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F99D1B02D12B3020052B024 /* TakeHomeTestNagaraju */;
+			targetProxy = 3F99D1CC2D12B3050052B024 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3F99D1D32D12B3050052B024 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3F99D1D42D12B3050052B024 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F99D1D62D12B3050052B024 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TakeHomeTestNagaraju/Preview Content\"";
+				DEVELOPMENT_TEAM = 2YFNCF65W4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TakeHomeTestNagaraju/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "App requires location permission";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.raju.TakeHomeTestNagaraju;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3F99D1D72D12B3050052B024 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TakeHomeTestNagaraju/Preview Content\"";
+				DEVELOPMENT_TEAM = 2YFNCF65W4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TakeHomeTestNagaraju/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "App requires location permission";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.raju.TakeHomeTestNagaraju;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3F99D1D92D12B3050052B024 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2YFNCF65W4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.raju.TakeHomeTestNagarajuTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TakeHomeTestNagaraju.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TakeHomeTestNagaraju";
+			};
+			name = Debug;
+		};
+		3F99D1DA2D12B3050052B024 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2YFNCF65W4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.raju.TakeHomeTestNagarajuTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TakeHomeTestNagaraju.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TakeHomeTestNagaraju";
+			};
+			name = Release;
+		};
+		3F99D1DC2D12B3050052B024 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2YFNCF65W4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.raju.TakeHomeTestNagarajuUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TakeHomeTestNagaraju;
+			};
+			name = Debug;
+		};
+		3F99D1DD2D12B3050052B024 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2YFNCF65W4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.raju.TakeHomeTestNagarajuUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TakeHomeTestNagaraju;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F99D1AC2D12B3020052B024 /* Build configuration list for PBXProject "TakeHomeTestNagaraju" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F99D1D32D12B3050052B024 /* Debug */,
+				3F99D1D42D12B3050052B024 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F99D1D52D12B3050052B024 /* Build configuration list for PBXNativeTarget "TakeHomeTestNagaraju" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F99D1D62D12B3050052B024 /* Debug */,
+				3F99D1D72D12B3050052B024 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F99D1D82D12B3050052B024 /* Build configuration list for PBXNativeTarget "TakeHomeTestNagarajuTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F99D1D92D12B3050052B024 /* Debug */,
+				3F99D1DA2D12B3050052B024 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F99D1DB2D12B3050052B024 /* Build configuration list for PBXNativeTarget "TakeHomeTestNagarajuUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F99D1DC2D12B3050052B024 /* Debug */,
+				3F99D1DD2D12B3050052B024 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3F99D1FE2D12B4AC0052B024 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3F99D1FF2D12B4AC0052B024 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F99D1FE2D12B4AC0052B024 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 3F99D1A92D12B3020052B024 /* Project object */;
+}
